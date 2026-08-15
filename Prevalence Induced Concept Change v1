@@ -5,6 +5,7 @@
 # The prevalence has 5 different values (0.5, 0.4, 0.28, 0.16, 0.06) I've changed them in each block so you dont have to. 
 # Don't forget to set dots' appearences to "set every repeat"
 
+#------------------------------------------------------------------------------------
 
 #(Block 1 - Break routine 1) Loop 1
 #Block 1
@@ -278,5 +279,7 @@ if (trial_num % 50) !=0:
     continueRoutine = False
 
 #Loop 5 = Loop type: Random / is trials: yes / Number of repeats: 650
+
+#------------------------------------------------------------------------------------
 
 # Setting the rgb codes to work correctly was a nightmare for me personally, so feel free to ask any questions!

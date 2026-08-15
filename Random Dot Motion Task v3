@@ -1,13 +1,34 @@
 # Hello! Im Guney, this is my Random Dot Motion Task code for PsychoPy v2025.1.1. It has two parts in which you have to set both the code and a csv file for variables.
-# We have to manipulate dot speed and coherence, which I've done using the csv file that manages both and add it to the loop. 
+# We have to manipulate dot direction and coherence, which I've done using the csv file that manages both and add it to the loop. 
 
 #(Main trial) loop
 
+#Main Trial
 #>Begin Experiment
 
 dots.setDir(direction)
 dots.setCoherence(coherence)
 
-#Loop
+# Note: SET DIRECTION AND COHERENCE ON THE DOTS TO "SET EVERY REPEAT"!!!
 
-#S
+#Loop type: fullRandom / is trials: yes / Number of repeats: 4
+
+#Dot settings: Size: 6 / Number of dots: 400 / Dot life time: 30 / Refresh rule: repeat
+
+# You can edit the dot settings to yur liking but this has worked for me and my participants so far. It has a good balance since you can coherently see the dots and their direction.
+
+#CSV FILE FOR THE EXPERIMENT
+
+#coherence	direction
+#0.2	      180
+#0.2	      0
+#0.25	      180
+#0.25	      0
+#0.3	      180
+#0.3	      0
+#0.35	      180
+#0.35	      0
+#0.4	      180
+#0.4	      0
+
+# The participant data is then converted into an excel file automatically. THEN it is ready for a DDM analysis. Feel free to ask anything! 

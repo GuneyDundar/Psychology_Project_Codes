@@ -1,0 +1,282 @@
+# Hello! Im Guney, this is my code for the Prevalence Induced Concept Change Experiment from the study by Levari et al. 2018.
+# The code is made to be run in PsychoPy v2025.1.1 and it has full instructions on each section as to where to put each block of code.
+
+# The prevalence of the blue dots changes for each block. Meaning we have to change the values accordingly in the begin routine sections.
+# The prevalence has 5 different values (0.5, 0.4, 0.28, 0.16, 0.06) I've changed them in each block so you dont have to. 
+# Don't forget to set dots' appearences to "set every repeat"
+
+
+#(Block 1 - Break routine 1) Loop 1
+#Block 1
+
+#>Begin experiment
+
+import numpy as np
+import random
+
+trial_num = 0
+
+# Article-accurate RGB spectrum
+# R: 100 down to 1
+R_values = np.arange(100, 0, -1)   # 100, 99, ..., 1
+
+# B always equals 255 - R
+B_values = 255 - R_values          # ensures R + B = 255
+
+# G is always 0 (constant, so no need for array)
+
+#>Begin routine
+
+trial_num += 1
+
+if random.random() < 0.5:
+    # Blue spectrum: R = 1–50
+    r = random.randint(1, 50)
+    spectrum = "blue"
+else:
+    # Purple spectrum: R = 51–100
+    r = random.randint(51, 100)
+    spectrum = "purple"
+
+# Enforce article rule: R + B = 255
+b = 255 - r
+g = 0
+
+dot_1.setColor([r, g, b], colorSpace='rgb255')
+
+#>End routine
+
+thisExp.addData('trial_num', trial_num)
+thisExp.addData('r_value', r)
+thisExp.addData('g_value', g)
+thisExp.addData('b_value', b)
+thisExp.addData('spectrum_sampled', spectrum)
+
+#Break routine 1
+
+if (trial_num % 50) !=0:
+    continueRoutine = False
+
+#Loop 1 = Loop type: Random / is trials: yes / Number of repeats: 200
+
+#------------------------------------------------------------------------------------
+
+#(Block 2 - Break routine 2) Loop 2
+#Block 2
+
+#>Begin experiment
+
+import numpy as np
+import random
+
+trial_num = 0
+
+# Article-accurate RGB spectrum
+# R: 100 down to 1
+R_values = np.arange(100, 0, -1)   # 100, 99, ..., 1
+
+# B always equals 255 - R
+B_values = 255 - R_values          # ensures R + B = 255
+
+# G is always 0 (constant, so no need for array)
+
+#>Begin routine
+
+trial_num += 1
+
+if random.random() < 0.4:
+    # Blue spectrum: R = 1–50
+    r = random.randint(1, 50)
+    spectrum = "blue"
+else:
+    # Purple spectrum: R = 51–100
+    r = random.randint(51, 100)
+    spectrum = "purple"
+
+# Enforce article rule: R + B = 255
+b = 255 - r
+g = 0
+
+dot_1.setColor([r, g, b], colorSpace='rgb255')
+
+#>End routine
+
+thisExp.addData('trial_num', trial_num)
+thisExp.addData('r_value', r)
+thisExp.addData('g_value', g)
+thisExp.addData('b_value', b)
+thisExp.addData('spectrum_sampled', spectrum)
+
+#Break routine 2
+
+if (trial_num % 50) !=0:
+    continueRoutine = False
+
+#Loop 2 = Loop type: Random / is trials: yes / Number of repeats: 50
+
+#------------------------------------------------------------------------------------
+
+#(Block 3 - Break routine 3) Loop 3
+#Block 3
+
+#>Begin experiment
+
+import numpy as np
+import random
+
+trial_num = 0
+
+# Article-accurate RGB spectrum
+# R: 100 down to 1
+R_values = np.arange(100, 0, -1)   # 100, 99, ..., 1
+
+# B always equals 255 - R
+B_values = 255 - R_values          # ensures R + B = 255
+
+# G is always 0 (constant, so no need for array)
+
+#>Begin routine
+
+trial_num += 1
+
+if random.random() < 0.28:
+    # Blue spectrum: R = 1–50
+    r = random.randint(1, 50)
+    spectrum = "blue"
+else:
+    # Purple spectrum: R = 51–100
+    r = random.randint(51, 100)
+    spectrum = "purple"
+
+# Enforce article rule: R + B = 255
+b = 255 - r
+g = 0
+
+dot_1.setColor([r, g, b], colorSpace='rgb255')
+
+#>End routine
+
+thisExp.addData('trial_num', trial_num)
+thisExp.addData('r_value', r)
+thisExp.addData('g_value', g)
+thisExp.addData('b_value', b)
+thisExp.addData('spectrum_sampled', spectrum)
+
+#Break routine 3
+
+if (trial_num % 50) !=0:
+    continueRoutine = False
+
+#Loop 3 = Loop type: Random / is trials: yes / Number of repeats: 50
+
+#------------------------------------------------------------------------------------
+
+#(Block 4 - Break routine 4) Loop 4
+#Block 4
+
+#>Begin experiment
+
+import numpy as np
+import random
+
+trial_num = 0
+
+# Article-accurate RGB spectrum
+# R: 100 down to 1
+R_values = np.arange(100, 0, -1)   # 100, 99, ..., 1
+
+# B always equals 255 - R
+B_values = 255 - R_values          # ensures R + B = 255
+
+# G is always 0 (constant, so no need for array)
+
+#>Begin routine
+
+trial_num += 1
+
+if random.random() < 0.16:
+    # Blue spectrum: R = 1–50
+    r = random.randint(1, 50)
+    spectrum = "blue"
+else:
+    # Purple spectrum: R = 51–100
+    r = random.randint(51, 100)
+    spectrum = "purple"
+
+# Enforce article rule: R + B = 255
+b = 255 - r
+g = 0
+
+dot_1.setColor([r, g, b], colorSpace='rgb255')
+
+#>End routine
+
+thisExp.addData('trial_num', trial_num)
+thisExp.addData('r_value', r)
+thisExp.addData('g_value', g)
+thisExp.addData('b_value', b)
+thisExp.addData('spectrum_sampled', spectrum)
+
+#Break routine 4
+
+if (trial_num % 50) !=0:
+    continueRoutine = False
+
+#Loop 4 = Loop type: Random / is trials: yes / Number of repeats: 50
+
+#------------------------------------------------------------------------------------
+
+#(Block 5 - Break routine 5) Loop 5
+#Block 5
+
+#>Begin experiment
+
+import numpy as np
+import random
+
+trial_num = 0
+
+# Article-accurate RGB spectrum
+# R: 100 down to 1
+R_values = np.arange(100, 0, -1)   # 100, 99, ..., 1
+
+# B always equals 255 - R
+B_values = 255 - R_values          # ensures R + B = 255
+
+# G is always 0 (constant, so no need for array)
+
+#>Begin routine
+
+trial_num += 1
+
+if random.random() < 0.06:
+    # Blue spectrum: R = 1–50
+    r = random.randint(1, 50)
+    spectrum = "blue"
+else:
+    # Purple spectrum: R = 51–100
+    r = random.randint(51, 100)
+    spectrum = "purple"
+
+# Enforce article rule: R + B = 255
+b = 255 - r
+g = 0
+
+dot_1.setColor([r, g, b], colorSpace='rgb255')
+
+#>End routine
+
+thisExp.addData('trial_num', trial_num)
+thisExp.addData('r_value', r)
+thisExp.addData('g_value', g)
+thisExp.addData('b_value', b)
+thisExp.addData('spectrum_sampled', spectrum)
+
+#Break routine 5
+
+if (trial_num % 50) !=0:
+    continueRoutine = False
+
+#Loop 5 = Loop type: Random / is trials: yes / Number of repeats: 650
+
+# Setting the rgb codes to work correctly was a nightmare for me personally, so feel free to ask any questions!

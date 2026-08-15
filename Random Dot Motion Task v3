@@ -1,0 +1,13 @@
+# Hello! Im Guney, this is my Random Dot Motion Task code for PsychoPy v2025.1.1. It has two parts in which you have to set both the code and a csv file for variables.
+# We have to manipulate dot speed and coherence, which I've done using the csv file that manages both and add it to the loop. 
+
+#(Main trial) loop
+
+#>Begin Experiment
+
+dots.setDir(direction)
+dots.setCoherence(coherence)
+
+#Loop
+
+#S
